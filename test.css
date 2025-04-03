@@ -1,0 +1,351 @@
+@font-face {
+  font-family: neu;
+  src: url(./NeueHaasDisplayMediu.ttf);
+}
+@font-face {
+  font-family: neu;
+  font-weight: 100;
+  src: url(./NeueHaasDisplayLight.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: neu, "Courier New", Courier, monospace;
+}
+#main {
+  /* background-color: black; */
+  position: relative;
+  z-index: 10;
+}
+#page1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 0 2vw;
+}
+nav {
+  padding: 2vw 0vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 100;
+}
+#nav-part2 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+#nav-part2 h4 {
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #0000003c;
+  color: #000000bb;
+  position: relative;
+  overflow: hidden;
+  font-size: 18px;
+  transition: all ease 0.4s;
+}
+#nav-part2 h4::after {
+  content: "";
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 50px;
+  transition: all ease 0.4s;
+}
+#nav-part2 h4:hover::after {
+  bottom: 0;
+  border-radius: 0;
+}
+
+#nav-part2 h4 a {
+  text-decoration: none;
+  color: #000000bb;
+  position: relative;
+  z-index: 9;
+}
+
+#nav-part2 h4:hover a {
+  color: #efeae3;
+}
+
+#center {
+  height: 65vh;
+  width: 100%;
+  /* background-color: orange; */
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-bottom: 1px solid #0000003c;
+  padding-bottom: 2.2vw;
+}
+#left h3 {
+  width: 25vw;
+  font-size: 1.8vw;
+  line-height: 1.1;
+}
+#right h2 {
+  font-size: 22vh;
+  text-align: right;
+  line-height: 0.8;
+}
+#page1 video {
+  position: relative;
+  width: 100%;
+  border-radius: 30px;
+  margin-top: 4vw;
+}
+#hero-shape {
+  position: absolute;
+  right: 0;
+  top: 65vh;
+  height: 32vw;
+  width: 46vw;
+  /* background-color: orangered; */
+  /* filter: blur(20px); */
+}
+#hero-1 {
+  background-color: orangered;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  filter: blur(20px);
+  position: absolute;
+}
+#hero-2 {
+  background-color: orangered;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  filter: blur(25px);
+  position: absolute;
+}
+#hero-3 {
+  background-color: orangered;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 50%;
+  filter: blur(25px);
+  position: absolute;
+  animation-name: anime1;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-direction: alternate;
+}
+
+@keyframes anime1 {
+  from {
+    transform: translate(55%, -3%);
+  }
+
+  to {
+    transform: translate(0%, 10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(5%, -5%);
+  }
+
+  to {
+    transform: translate(-20%, 30%);
+  }
+}
+#page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 8vw 0;
+  position: relative;
+}
+#moving-text {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+#moving-text::-webkit-scrollbar {
+  display: none;
+}
+.con {
+  display: inline-block;
+  white-space: nowrap;
+  animation: move;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.con h1 {
+  font-size: 9vw;
+  display: inline-block;
+}
+#circle {
+  height: 50px;
+  width: 50px;
+  background-color: orangered;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 1vw 2vw;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+#page2-bottom {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1vw 2vw;
+  position: relative;
+  z-index: 99;
+}
+#page2-bottom h1 {
+  width: 60%;
+  font-size: 4vw;
+  line-height: 4vw;
+}
+#bottom-part2 {
+  width: 20%;
+}
+#bottom-part2 img {
+  border-radius: 15px;
+  width: 100%;
+}
+#bottom-part2 p {
+  margin-top: 3vh;
+  font-weight: 100;
+}
+#blob {
+  height: 30vw;
+  width: 30vw;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  border-radius: 50%;
+  background: linear-gradient(to top right, #ff2d03, #ff5c0b);
+  filter: blur(20px);
+  animation: blob-anime;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+@keyframes blob-anime {
+  from {
+    filter: blur(20px);
+    transform: translate(10%, -10%) skew(0);
+  }
+  to {
+    filter: blur(30px);
+    transform: translate(-10%, 10%) skew(-12deg);
+  }
+}
+#page3 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  padding: 4vw 0;
+}
+#page4 {
+  height: 70vh;
+  width: 100%;
+  padding: 10vw 2vw;
+  background-color: #efeae3;
+}
+/* swiper code start here  */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 30%;
+  border-left: 1px solid #aeafad;
+  padding: 0 2vw;
+}
+
+.elem {
+  height: 150px;
+  width: 100%;
+  padding: 0 2vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px solid #38383864;
+}
+.elem h2 {
+  font-size: 3vw;
+  position: relative;
+  z-index: 9;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: orange;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  transition: all ease 0.25s;
+}
+.elem:hover .overlay {
+  top: 0;
+}
+.fixed-image {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  height: 30vw;
+  width: 26vw;
+  background-color: #ff2d03;
+  z-index: 99;
+  border-radius: 15px;
+  display: none;
+  background-size: cover;
+  background-position: center;
+}
+#page5 {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #aeafad; */
+}
+#footer {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 105vh;
+  width: 100%;
+  z-index: 9;
+  bottom: 0px;
+  padding: 1vw 3vw;
+  background-color: black;
+}
+#footer h1 {
+  color: #ffff;
+  font-size: 23vw;
+  border-bottom: 1px solid white;
+}
+#footer-div {
+  height: 150px;
+  width: 100%;
+  background-color: red;
+}

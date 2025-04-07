@@ -4,38 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sundown Studio</title>
-    <link rel="shortcut icon" href="./icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
+    <!-- Link locomotive's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
+    <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
     <div id="loader">
       <h1>ENVIRONMENTS</h1>
       <h1>EXPERIENCES</h1>
       <h1>CONTENT</h1>
     </div>
-    <div id="fixed-image"></div>
+    <!-- <div class="scroll-section">
+        <img src="./arrow-up-line.svg" alt="" />
+      </div> -->
+    <div class="fixed-image"></div>
     <div id="main">
       <div id="page1">
         <nav>
           <img
             src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
-            alt=""
+            alt="brand logo"
           />
           <div id="nav-part2">
             <h4><a href="#">Work</a></h4>
             <h4><a href="#">Studio</a></h4>
             <h4><a href="#">Contact</a></h4>
           </div>
-          <h3>Menu</h3>
+          <div class="hamburger-wrapper">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+          </div>
         </nav>
         <div id="center">
           <div id="left">
@@ -45,11 +53,11 @@
             </h3>
           </div>
           <div id="right">
-            <h1>
+            <h2>
               SPACES <br />
               THAT <br />
               INSPIRE
-            </h1>
+            </h2>
           </div>
         </div>
         <div id="hero-shape">
@@ -57,45 +65,43 @@
           <div id="hero-2"></div>
           <div id="hero-3"></div>
         </div>
-        <video autoplay loop muted src="./video.mp4"></video>
+        <video src="./video.mp4" autoplay loop muted></video>
       </div>
       <div id="page2">
         <div id="moving-text">
           <div class="con">
-            <h1>EXPERIENCES</h1>
-            <div id="gola"></div>
-            <h1>CONTENT</h1>
-            <div id="gola"></div>
             <h1>ENVIRONMENTS</h1>
-            <div id="gola"></div>
+            <div id="circle"></div>
+            <h1>EXPERIENCES</h1>
+            <div id="circle"></div>
+            <h1>CONTENT</h1>
+            <div id="circle"></div>
           </div>
           <div class="con">
-            <h1>EXPERIENCES</h1>
-            <div id="gola"></div>
-            <h1>CONTENT</h1>
-            <div id="gola"></div>
             <h1>ENVIRONMENTS</h1>
-            <div id="gola"></div>
+            <div id="circle"></div>
+            <h1>EXPERIENCES</h1>
+            <div id="circle"></div>
+            <h1>CONTENT</h1>
+            <div id="circle"></div>
           </div>
           <div class="con">
-            <h1>EXPERIENCES</h1>
-            <div id="gola"></div>
-            <h1>CONTENT</h1>
-            <div id="gola"></div>
             <h1>ENVIRONMENTS</h1>
-            <div id="gola"></div>
+            <div id="circle"></div>
+            <h1>EXPERIENCES</h1>
+            <div id="circle"></div>
+            <h1>CONTENT</h1>
+            <div id="circle"></div>
           </div>
         </div>
         <div id="page2-bottom">
           <h1>
-            We are a group of design- driven, goal-focused creators, producers,
-            and designers who believe that the details make all the difference.
+            We are a group of design- <br />
+            driven, goal-focused creators, producers, and designers who believe
+            that the details make all the difference.
           </h1>
           <div id="bottom-part2">
-            <img
-              src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg"
-              alt=""
-            />
+            <img src="./assets/thumbnail.webp" alt="thumbnail" />
             <p>
               We love to create, we love to solve, we love to collaborate, and
               we love to turn amazing ideas into reality. We’re here to partner
@@ -104,7 +110,7 @@
             </p>
           </div>
         </div>
-        <div id="gooey"></div>
+        <div id="blob"></div>
       </div>
       <div id="page3">
         <div id="elem-container">
@@ -161,30 +167,124 @@
         </div>
       </div>
       <div id="page4">
+        <h2>who we work with</h2>
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-            <div class="swiper-slide">Slide 4</div>
-            <div class="swiper-slide">Slide 5</div>
-            <div class="swiper-slide">Slide 6</div>
-            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">
+              <img class="brand-logo" src="./assets/logoipsum-212.svg" alt="" />
+              <p class="client-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus dolores asperiores odio porro veniam atque
+                assumenda est doloremque dolorum, provident voluptas libero
+                autem facere iure, perspiciatis vitae, quo ratione!
+              </p>
+            </div>
+
+            <div class="swiper-slide">
+              <img class="brand-logo" src="./assets/logoipsum-215.svg" alt="" />
+              <p class="client-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus dolores asperiores odio porro veniam atque
+                assumenda est doloremque dolorum, provident voluptas libero
+                autem facere iure, perspiciatis vitae, quo ratione!
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="brand-logo" src="./assets/logoipsum-217.svg" alt="" />
+              <p class="client-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus dolores asperiores odio porro veniam atque
+                assumenda est doloremque dolorum, provident voluptas libero
+                autem facere iure, perspiciatis vitae, quo ratione!
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="brand-logo" src="./assets/logoipsum-239.svg" alt="" />
+              <p class="client-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus dolores asperiores odio porro veniam atque
+                assumenda est doloremque dolorum, provident voluptas libero
+                autem facere iure, perspiciatis vitae, quo ratione!
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="brand-logo" src="./assets/logoipsum-342.svg" alt="" />
+              <p class="client-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus dolores asperiores odio porro veniam atque
+                assumenda est doloremque dolorum, provident voluptas libero
+                autem facere iure, perspiciatis vitae, quo ratione!
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="brand-logo" src="./assets/logoipsum-342.svg" alt="" />
+              <p class="client-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus dolores asperiores odio porro veniam atque
+                assumenda est doloremque dolorum, provident voluptas libero
+                autem facere iure, perspiciatis vitae, quo ratione!
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <img class="brand-logo" src="./assets/logoipsum-212.svg" alt="" />
+              <p class="client-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                voluptatibus dolores asperiores odio porro veniam atque
+                assumenda est doloremque dolorum, provident voluptas libero
+                autem facere iure, perspiciatis vitae, quo ratione!
+              </p>
+            </div>
           </div>
         </div>
       </div>
       <div id="page5"></div>
       <div id="full-scr">
-        <div id="full-div1"></div>
+        <div id="full-div1">
+          <h2>Work</h2>
+          <h2>Studio</h2>
+          <h2>Contact</h2>
+        </div>
       </div>
     </div>
     <div id="footer">
-      <div id="footer-div"></div>
+      <div id="footer-div">
+        <div class="footer-left">
+          <h2><a href="#"> work </a></h2>
+          <h2><a href="#"> studio </a></h2>
+          <h2><a href="#"> contact </a></h2>
+        </div>
+        <div class="footer-right">
+          <h2>
+            Get industry insights and creative inspiration straight to your
+            inbox
+          </h2>
+          <form>
+            <input type="email" required placeholder="Email address" />
+            <button type="submit">
+              <img
+                class="arrow-icon"
+                src="./assets/arrow-right-line.svg"
+                alt="arrow-icon"
+              />
+            </button>
+          </form>
+        </div>
+      </div>
       <h1>Sundown</h1>
-      <div id="footer-bottom"></div>
+      <div id="footer-bottom">
+        <p class="text-capitalize copyright m-0">
+          copyright &copy;
+          <span id="current-year"> 2025 </span>
+          Sundown studio, all right reserved
+        </p>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <!-- Swiper JS  always import first than our script otherwise swiper won't work-->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <!-- Link locomotive's JS -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <!-- Link custom JS -->
+    <script src="./script.js"></script>
   </body>
 </html>

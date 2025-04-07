@@ -85,6 +85,7 @@ nav {
 }
 #nav-part2 h4:hover::after {
   bottom: 0;
+  cursor: pointer;
   border-radius: 0;
 }
 

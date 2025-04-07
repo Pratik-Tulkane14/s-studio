@@ -455,7 +455,7 @@ nav {
   width: 100vw;
   background-color: rgba(18, 18, 18, 0.611);
   position: fixed;
-  top: -108%;
+  top: -110%;
   z-index: 99;
   transition: all ease 0.5s;
 }
@@ -684,6 +684,10 @@ nav {
   .footer-right h2 {
     font-size: 4vw;
   }
+  #footer-bottom {
+    padding: 0 0.4vw;
+    font-size: 4vw;
+  }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
   .elem h2 {
@@ -705,7 +709,7 @@ nav {
   .footer-right {
     width: 45vw;
   }
-  .swiper{
+  .swiper {
     height: 30vw !important;
     width: 100%;
   }

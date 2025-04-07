@@ -56,10 +56,12 @@ const menuToggler = () => {
         if (flag) {
             navImage.style.opacity = "0";
             fullScr.style.top = "0";
+            // fullScr.style.top = "-5";
             flag = !flag;
         } else {
             navImage.style.opacity = "1";
-            fullScr.style.top = "-108%";
+            // fullScr.style.top = "-108%";
+            fullScr.style.top = "-110%";
             flag = !flag;
         }
     })
